@@ -1,60 +1,71 @@
+/* Set background image and font for the body */
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
     padding: 20px;
 }
 
+/* Styling for main headings */
 h1 {
     font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin-top: 0; /* No top margin */
+    margin-bottom: 15px; /* Margin below the heading */
 }
 
+/* Styling for subheadings */
 h2 {
     font-size: 30px;
 }
 
+/* Italicize text with the "established" class */
 .established {
     font-style: italic;
 }
 
+/* Center align headings and paragraphs */
 h1,
 h2,
 p {
     text-align: center;
 }
 
+/* Styling for the menu section */
 .menu {
-    width: 80%;
+    width: 80%; /* 80% width of the container */
     background-color: burlywood;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
     padding: 20px;
-    max-width: 500px;
+    max-width: 500px; /* Maximum width */
 }
 
+/* Center align images */
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -25px;
+    margin-top: -25px; /* Adjust image positioning */
 }
 
+/* Styling for horizontal divider */
 hr {
     height: 2px;
     background-color: brown;
     border-color: brown;
 }
 
+/* Add margin above for elements with class "bottom-line" */
 .bottom-line {
     margin-top: 25px;
 }
 
+/* Apply font family to headings */
 h1,
 h2 {
     font-family: Impact, serif;
 }
 
+/* Styling for item descriptions */
 .item p {
     display: inline-block;
     margin-top: 5px;
@@ -62,38 +73,44 @@ h2 {
     font-size: 18px;
 }
 
+/* Align text left for flavor and dessert items */
 .flavor,
 .dessert {
     text-align: left;
     width: 75%;
 }
 
+/* Align text right for item prices */
 .price {
     text-align: right;
 }
 
-/* FOOTER */
-
+/* Styling for the footer section */
 footer {
     font-size: 14px;
 }
 
+/* Margin for address in footer */
 .address {
     margin-bottom: 5px;
 }
 
+/* Styling for links */
 a {
     color: black;
 }
 
+/* Styling for visited links */
 a:visited {
     color: black;
 }
 
+/* Styling for links on hover */
 a:hover {
     color: brown;
 }
 
+/* Styling for active links */
 a:active {
     color: brown;
 }
