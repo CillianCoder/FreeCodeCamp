@@ -1,0 +1,121 @@
+/* Apply border-box sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Set the base font size for the entire page */
+html {
+    font-size: 16px;
+}
+
+/* Set the default font family for the body */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling for the label container */
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+/* Styling for the main header */
+header h1 {
+    text-align: center;
+    margin: -4px 0; /* Adjust margin */
+    letter-spacing: 0.15px; /* Adjust letter spacing */
+}
+
+/* Styling for paragraphs with space between */
+p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for dividers */
+.divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+/* Bold font weight */
+.bold {
+    font-weight: 800;
+}
+
+/* Styling for large and medium dividers */
+.large {
+    height: 10px;
+}
+
+.large,
+.medium {
+    background-color: black;
+    border: 0;
+}
+
+/* Styling for medium dividers */
+.medium {
+    height: 5px;
+}
+
+/* Styling for small text */
+.small-text {
+    font-size: 0.85rem;
+}
+
+/* Styling for calories information section */
+.calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Styling for calories-info heading */
+.calories-info h2 {
+    margin: 0;
+}
+
+/* Styling for left-container paragraph */
+.left-container p {
+    margin: -5px -2px; /* Adjust margins */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/* Styling for calories-info span */
+.calories-info span {
+    margin: -7px -2px; /* Adjust margins */
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+/* Styling for right-aligned content */
+.right {
+    justify-content: flex-end;
+}
+
+/* Indentation classes */
+.indent {
+    margin-left: 1em;
+}
+
+.double-indent {
+    margin-left: 2em;
+}
+
+/* Styling for daily value paragraphs */
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+/* Styling for notes */
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px; /* Adjust text indentation */
+}
