@@ -1,43 +1,49 @@
+/* Apply border-box sizing to all elements */
 * {
     box-sizing: border-box;
 }
 
+/* Reset default margin and set font for the entire page */
 body {
     margin: 0;
     font-family: sans-serif;
     background: #f5f6f7;
 }
 
+/* Styling for the header section */
 .header {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Uppercase text */
     padding: 32px;
     background-color: #0a0a23;
-    color: #fff;
-    border-bottom: 4px solid #fdb347;
+    color: #fff; /* Text color */
+    border-bottom: 4px solid #fdb347; /* Bottom border */
 }
 
+/* Styling for the gallery section */
 .gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
+    display: flex; /* Flex container */
+    flex-direction: row; /* Items in a row */
+    flex-wrap: wrap; /* Allow wrapping to next row */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    gap: 16px; /* Gap between items */
+    max-width: 1400px; /* Maximum width */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px 10px; /* Padding */
 }
 
+/* Styling for gallery images */
 .gallery img {
-    width: 100%;
-    max-width: 350px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 100%; /* Full width */
+    max-width: 350px; /* Maximum width */
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Pseudo-element to create additional space in the gallery */
 .gallery::after {
-    content: "";
-    width: 350px;
+    content: ""; /* Empty content */
+    width: 350px; /* Width for spacing */
 }
