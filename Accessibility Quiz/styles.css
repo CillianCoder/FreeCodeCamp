@@ -1,0 +1,212 @@
+/* The following rule applies smooth scroll behavior to all elements
+   only if prefers-reduced-motion is set to no-preference */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Styling for the body element */
+body {
+  background: #f5f6f7; /* Background color */
+  color: #1b1b32; /* Text color */
+  font-family: Helvetica; /* Font family */
+  margin: 0; /* Remove margin */
+}
+
+/* Styling for the header element */
+header {
+  width: 100%; /* Full width */
+  height: 50px; /* Height */
+  background-color: #1b1b32; /* Background color */
+  display: flex; /* Flex display */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Align vertically */
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Positioned at the top */
+}
+
+/* Styling for the logo element */
+#logo {
+  width: max(100px, 18vw); /* Width with max function */
+  background-color: #0a0a23; /* Background color */
+  aspect-ratio: 35 / 4; /* Aspect ratio */
+  padding: 0.4rem; /* Padding */
+}
+
+/* Styling for h1 elements */
+h1 {
+  color: #f1be32; /* Text color */
+  font-size: min(5vw, 1.2em); /* Responsive font size */
+  text-align: center; /* Text alignment */
+}
+
+/* Styling for the navigation */
+nav {
+  width: 50%; /* Width */
+  max-width: 300px; /* Maximum width */
+  height: 50px; /* Height */
+}
+
+/* Styling for navigation ul */
+nav > ul {
+  display: flex; /* Flex display */
+  justify-content: space-evenly; /* Space between items */
+  flex-wrap: wrap; /* Wrap items */
+  align-items: center; /* Align vertically */
+  padding-inline-start: 0; /* Remove padding */
+  margin-block: 0; /* Remove margin */
+  height: 100%; /* Full height */
+}
+
+/* Styling for navigation li */
+nav > ul > li {
+  color: #dfdfe2; /* Text color */
+  margin: 0 0.2rem; /* Margin */
+  padding: 0.2rem; /* Padding */
+  display: block; /* Display as block */
+}
+
+/* Styling for hovered navigation li */
+nav > ul > li:hover {
+  background-color: #dfdfe2; /* Background color on hover */
+  color: #1b1b32; /* Text color on hover */
+  cursor: pointer; /* Cursor style on hover */
+}
+
+/* Styling for anchor elements within list items */
+li > a {
+  color: inherit; /* Inherit color */
+  text-decoration: none; /* Remove text decoration */
+}
+
+/* Styling for the main content area */
+main {
+  padding-top: 50px; /* Padding from the top */
+}
+
+/* Styling for section elements */
+section {
+  width: 80%; /* Width */
+  margin: 0 auto 10px auto; /* Margin */
+  max-width: 600px; /* Maximum width */
+}
+
+/* Styling for h2 elements */
+h2 {
+  font-family: Verdana, Tahoma; /* Font family */
+  border-bottom: 4px solid #dfdfe2; /* Bottom border */
+  margin-top: 0px; /* Margin from the top */
+  padding-top: 60px; /* Padding from the top */
+}
+
+/* Styling for elements with class "info" */
+.info {
+  padding: 10px 0 0 5px; /* Padding */
+}
+
+/* Styling for elements with class "formrow" */
+.formrow {
+  margin-top: 30px; /* Margin from the top */
+  padding: 0px 15px; /* Padding */
+}
+
+/* Styling for input elements */
+input {
+  font-size: 16px; /* Font size */
+}
+
+/* Styling for elements within class "info" */
+.info label,
+.info input {
+  display: inline-block; /* Display as inline block */
+}
+
+/* Styling for input elements within class "info" */
+.info input {
+  width: 50%; /* Width */
+  text-align: left; /* Text alignment */
+}
+
+/* Styling for label elements within class "info" */
+.info label {
+  width: 10%; /* Width */
+  min-width: 55px; /* Minimum width */
+  text-align: right; /* Text alignment */
+}
+
+/* Styling for elements with class "question-block" */
+.question-block {
+  text-align: left; /* Text alignment */
+  display: block; /* Display as block */
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Margin from the top */
+  padding-top: 5px; /* Padding from the top */
+}
+
+/* Styling for p elements */
+p {
+  margin-top: 5px; /* Margin from the top */
+  padding-left: 15px; /* Padding from the left */
+  font-size: 20px; /* Font size */
+}
+
+/* Styling for p elements before content */
+p::before {
+  content: "Question #"; /* Content before element */
+}
+
+/* Styling for elements with class "question" */
+.question {
+  border: none; /* Remove border */
+  padding-bottom: 0; /* Padding from the bottom */
+}
+
+/* Styling for list with class "answers-list" */
+.answers-list {
+  list-style: none; /* Remove list bullet */
+  padding: 0; /* Remove padding */
+}
+
+/* Styling for button elements */
+button {
+  display: block; /* Display as block */
+  margin: 40px auto; /* Margin */
+  width: 40%; /* Width */
+  padding: 15px; /* Padding */
+  font-size: 23px; /* Font size */
+  background: #d0d0d5; /* Background color */
+  border: 3px solid #3b3b4f; /* Border */
+}
+
+/* Styling for footer elements */
+footer {
+  background-color: #2a2a40; /* Background color */
+  display: flex; /* Flex display */
+  justify-content: center; /* Justify content center */
+}
+
+/* Styling for footer elements and links */
+footer,
+footer a {
+  color: #dfdfe2; /* Text color */
+}
+
+/* Styling for address elements */
+address {
+  text-align: center; /* Text alignment */
+  padding: 0.3em; /* Padding */
+}
+
+/* Styling for visually hidden elements (for accessibility) */
+.sr-only {
+  position: absolute; /* Positioning */
+  width: 1px; /* Width */
+  height: 1px; /* Height */
+  padding: 0; /* Padding */
+  margin: -1px; /* Negative margin */
+  overflow: hidden; /* Overflow hidden */
+  clip: rect(0, 0, 0, 0); /* Clipping */
+  white-space: nowrap; /* No wrapping */
+  border: 0; /* No border */
+}
